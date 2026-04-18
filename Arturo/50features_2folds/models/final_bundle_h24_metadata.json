@@ -1,0 +1,23 @@
+{
+  "horizon": 24,
+  "classifier_name": "logistic_enet",
+  "classifier_params": {
+    "C": 0.5,
+    "l1_ratio": 0.15,
+    "class_weight": "balanced",
+    "max_iter": 250
+  },
+  "regressor_name": "xgb_regressor",
+  "regressor_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.06,
+    "max_depth": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 6,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.5,
+    "early_stopping_rounds": 15
+  },
+  "final_train_origin_max_timestamp": "2023-06-29T00:00:00"
+}
