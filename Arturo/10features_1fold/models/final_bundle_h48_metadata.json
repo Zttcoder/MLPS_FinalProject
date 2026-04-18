@@ -1,5 +1,7 @@
 {
   "horizon": 48,
+  "selection_source": "best_pair_by_horizon",
+  "source_pair_tag": "h48__clf_xgbc01__reg_xgbr01",
   "classifier_name": "xgb_classifier",
   "classifier_params": {
     "n_estimators": 150,
@@ -24,5 +26,32 @@
     "reg_lambda": 1.5,
     "early_stopping_rounds": 15
   },
-  "final_train_origin_max_timestamp": "2023-06-28T00:00:00"
+  "bundle_source": "reused_existing_refit",
+  "final_train_origin_max_timestamp": "2023-06-28T00:00:00",
+  "source_validation_metrics": {
+    "mean_horizon": 48.0,
+    "mean_fold_id": 1.0,
+    "mean_avg_county_rmse_expected": 64.60385334816134,
+    "mean_avg_county_rmse_hard_gate": 65.1003423243606,
+    "mean_overall_rmse_expected": 168.4370272210243,
+    "mean_overall_mae_expected": 29.927638707755424,
+    "mean_zero_baseline_rmse": 195.502004812079,
+    "mean_zero_baseline_avg_county_rmse": 70.48821561534488,
+    "mean_stage1_roc_auc": 0.858822677395757,
+    "mean_stage1_average_precision": 0.7991988235445799,
+    "mean_stage1_brier_score": 0.13179038146546718,
+    "mean_stage1_log_loss": 0.41419033357112695,
+    "mean_stage1_precision": 0.7284172661870504,
+    "mean_stage1_recall": 0.648,
+    "mean_stage1_f1": 0.6858594411515665,
+    "mean_stage1_tn": 2432.0,
+    "mean_stage1_fp": 302.0,
+    "mean_stage1_fn": 440.0,
+    "mean_stage1_tp": 810.0,
+    "mean_stage2_positive_rows_train": 275398.0,
+    "mean_stage2_positive_rows_valid": 1250.0,
+    "mean_stage2_positive_rmse": 299.81178687132046,
+    "mean_stage2_positive_mae": 91.81673452968597,
+    "mean_stage2_fallback_only": 0.0
+  }
 }

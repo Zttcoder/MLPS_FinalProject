@@ -32,8 +32,17 @@
   "combination_rule": "probability_times_positive_expectation",
   "positive_target_transform": "log1p",
   "resume_from_checkpoints": true,
+  "resume_specific_run": true,
+  "resume_run_timestamp": "20260418_020817",
   "resume_latest_run": false,
   "save_fold_models": true,
+  "save_all_trained_models": true,
+  "backfill_missing_model_artifacts_from_existing_runs": true,
+  "reuse_existing_saved_models": true,
+  "reuse_existing_final_refit_artifacts": true,
+  "reuse_existing_submission_model_artifacts": true,
+  "save_submission_model_copies": true,
+  "prediction_model_source": "best_candidate_validation_model",
   "use_demo_evaluation": true,
   "plot_top_k_counties": 10,
   "show_detailed_progress": true,
@@ -87,5 +96,5 @@
   "xgb_tree_method": "hist",
   "run_timestamp": "20260418_020817",
   "run_dir": "/content/drive/MyDrive/MLPS Project/results/run_20260418_020817",
-  "resumed_existing_run": false
+  "resumed_existing_run": true
 }

@@ -3,7 +3,7 @@
   "platform": "Linux-6.6.113+-x86_64-with-glibc2.35",
   "project_root": "/content/drive/MyDrive/MLPS Project",
   "run_timestamp": "20260418_020817",
-  "resumed_existing_run": false,
+  "resumed_existing_run": true,
   "gpu_available": true,
   "xgboost_device": "cuda",
   "package_versions": {
