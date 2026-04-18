@@ -1,0 +1,32 @@
+{
+  "horizon": 48,
+  "selection_source": "best_candidate_validation_model",
+  "source_pair_tag": "h48__clf_xgbc01__reg_xgbr01",
+  "source_fold_id": 1,
+  "classifier_name": "xgb_classifier",
+  "classifier_params": {
+    "n_estimators": 150,
+    "learning_rate": 0.08,
+    "max_depth": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 6,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.5,
+    "early_stopping_rounds": 15
+  },
+  "regressor_name": "xgb_regressor",
+  "regressor_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.06,
+    "max_depth": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 6,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.5,
+    "early_stopping_rounds": 15
+  },
+  "avg_county_rmse_expected": 64.60385334816134,
+  "overall_rmse_expected": 168.4370272210243
+}
