@@ -862,6 +862,6 @@ Together, those three files already tell you:
 
 If you are browsing this repository and want a concrete example, start with:
 
-- [run_20260418_214955](</c:/Users/Arturo Arias/OneDrive/Documentos en OneDrive/CMU/2026-1 Spring/Machine Learning for Problem Solving/Project/run_20260418_214955>)
+- [run_20260418_214955](run_20260418_214955)
 
 and then follow the reading order from Section 3.
