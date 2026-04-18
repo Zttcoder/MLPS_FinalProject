@@ -1,0 +1,28 @@
+{
+  "horizon": 48,
+  "classifier_name": "xgb_classifier",
+  "classifier_params": {
+    "n_estimators": 150,
+    "learning_rate": 0.08,
+    "max_depth": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 6,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.5,
+    "early_stopping_rounds": 15
+  },
+  "regressor_name": "xgb_regressor",
+  "regressor_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.06,
+    "max_depth": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 6,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.5,
+    "early_stopping_rounds": 15
+  },
+  "final_train_origin_max_timestamp": "2023-06-28T00:00:00"
+}
