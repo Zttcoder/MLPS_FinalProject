@@ -1,0 +1,868 @@
+{
+  "run_timestamp": "20260418_214955",
+  "project_root": "/content/drive/MyDrive/MLPS Project",
+  "config_path": "config.json",
+  "environment_path": "environment.json",
+  "selected_weather_features": [
+    "gh_4",
+    "cape_1",
+    "pwat",
+    "sh2",
+    "mslma",
+    "sdlwrf",
+    "mcc",
+    "d2m",
+    "cape",
+    "lcc"
+  ],
+  "best_pair_by_horizon": [
+    {
+      "horizon": 24,
+      "pair_tag": "h24__clf_xgbc01__reg_xgbr01",
+      "classifier_name": "xgb_classifier",
+      "classifier_params": "{\"n_estimators\": 150, \"learning_rate\": 0.08, \"max_depth\": 5, \"subsample\": 0.8, \"colsample_bytree\": 0.7, \"min_child_weight\": 6, \"reg_alpha\": 0.0, \"reg_lambda\": 1.5, \"early_stopping_rounds\": 15}",
+      "regressor_name": "xgb_regressor",
+      "regressor_params": "{\"n_estimators\": 200, \"learning_rate\": 0.06, \"max_depth\": 5, \"subsample\": 0.8, \"colsample_bytree\": 0.7, \"min_child_weight\": 6, \"reg_alpha\": 0.0, \"reg_lambda\": 1.5, \"early_stopping_rounds\": 15}",
+      "mean_horizon": 24.0,
+      "mean_fold_id": 1.0,
+      "mean_avg_county_rmse_expected": 82.89578159581465,
+      "mean_avg_county_rmse_hard_gate": 82.1821424186021,
+      "mean_overall_rmse_expected": 255.25741717209638,
+      "mean_overall_mae_expected": 58.4736557023293,
+      "mean_zero_baseline_rmse": 273.35358370964815,
+      "mean_zero_baseline_avg_county_rmse": 86.70970007699015,
+      "mean_stage1_roc_auc": 0.8965059905387351,
+      "mean_stage1_average_precision": 0.8659395260365788,
+      "mean_stage1_brier_score": 0.1236823759911361,
+      "mean_stage1_log_loss": 0.3911258834442014,
+      "mean_stage1_precision": 0.8829568788501027,
+      "mean_stage1_recall": 0.5922865013774105,
+      "mean_stage1_f1": 0.7089859851607585,
+      "mean_stage1_tn": 1209.0,
+      "mean_stage1_fp": 57.0,
+      "mean_stage1_fn": 296.0,
+      "mean_stage1_tp": 430.0,
+      "mean_stage2_positive_rows_train": 140860.0,
+      "mean_stage2_positive_rows_valid": 726.0,
+      "mean_stage2_positive_rmse": 425.40495055411986,
+      "mean_stage2_positive_mae": 162.30802463385027,
+      "mean_stage2_fallback_only": 0.0
+    },
+    {
+      "horizon": 48,
+      "pair_tag": "h48__clf_xgbc01__reg_xgbr01",
+      "classifier_name": "xgb_classifier",
+      "classifier_params": "{\"n_estimators\": 150, \"learning_rate\": 0.08, \"max_depth\": 5, \"subsample\": 0.8, \"colsample_bytree\": 0.7, \"min_child_weight\": 6, \"reg_alpha\": 0.0, \"reg_lambda\": 1.5, \"early_stopping_rounds\": 15}",
+      "regressor_name": "xgb_regressor",
+      "regressor_params": "{\"n_estimators\": 200, \"learning_rate\": 0.06, \"max_depth\": 5, \"subsample\": 0.8, \"colsample_bytree\": 0.7, \"min_child_weight\": 6, \"reg_alpha\": 0.0, \"reg_lambda\": 1.5, \"early_stopping_rounds\": 15}",
+      "mean_horizon": 48.0,
+      "mean_fold_id": 1.0,
+      "mean_avg_county_rmse_expected": 64.69696934621763,
+      "mean_avg_county_rmse_hard_gate": 63.90174539576783,
+      "mean_overall_rmse_expected": 186.36074268806135,
+      "mean_overall_mae_expected": 34.738801624663324,
+      "mean_zero_baseline_rmse": 196.73068992261915,
+      "mean_zero_baseline_avg_county_rmse": 66.71676804777749,
+      "mean_stage1_roc_auc": 0.8743629743721508,
+      "mean_stage1_average_precision": 0.8265821193051082,
+      "mean_stage1_brier_score": 0.1300242283438306,
+      "mean_stage1_log_loss": 0.4110624479526746,
+      "mean_stage1_precision": 0.891218872870249,
+      "mean_stage1_recall": 0.5078416728902165,
+      "mean_stage1_f1": 0.6470028544243578,
+      "mean_stage1_tn": 2562.0,
+      "mean_stage1_fp": 83.0,
+      "mean_stage1_fn": 659.0,
+      "mean_stage1_tp": 680.0,
+      "mean_stage2_positive_rows_train": 252291.0,
+      "mean_stage2_positive_rows_valid": 1339.0,
+      "mean_stage2_positive_rmse": 321.77445756185676,
+      "mean_stage2_positive_mae": 101.97453344233273,
+      "mean_stage2_fallback_only": 0.0
+    }
+  ],
+  "best_candidate_model_by_horizon": [
+    {
+      "horizon": 24,
+      "pair_tag": "h24__clf_xgbc01__reg_xgbr01",
+      "fold_id": 1,
+      "classifier_name": "xgb_classifier",
+      "classifier_params": "{\"n_estimators\": 150, \"learning_rate\": 0.08, \"max_depth\": 5, \"subsample\": 0.8, \"colsample_bytree\": 0.7, \"min_child_weight\": 6, \"reg_alpha\": 0.0, \"reg_lambda\": 1.5, \"early_stopping_rounds\": 15}",
+      "regressor_name": "xgb_regressor",
+      "regressor_params": "{\"n_estimators\": 200, \"learning_rate\": 0.06, \"max_depth\": 5, \"subsample\": 0.8, \"colsample_bytree\": 0.7, \"min_child_weight\": 6, \"reg_alpha\": 0.0, \"reg_lambda\": 1.5, \"early_stopping_rounds\": 15}",
+      "two_stage_model_path": "results/run_20260418_214955/models/pair_h24__clf_xgbc01__reg_xgbr01_f01_two_stage.joblib",
+      "stage1_model_path": "results/run_20260418_214955/models/pair_h24__clf_xgbc01__reg_xgbr01_f01_stage1_classifier.joblib",
+      "stage2_model_path": "results/run_20260418_214955/models/pair_h24__clf_xgbc01__reg_xgbr01_f01_stage2_regressor.joblib",
+      "avg_county_rmse_expected": 82.89578159581465,
+      "avg_county_rmse_hard_gate": 82.1821424186021,
+      "overall_rmse_expected": 255.25741717209638,
+      "overall_mae_expected": 58.4736557023293,
+      "zero_baseline_rmse": 273.35358370964815,
+      "zero_baseline_avg_county_rmse": 86.70970007699015,
+      "stage1_roc_auc": 0.8965059905387351,
+      "stage1_average_precision": 0.8659395260365788,
+      "stage1_brier_score": 0.1236823759911361,
+      "stage1_log_loss": 0.3911258834442014,
+      "stage1_precision": 0.8829568788501027,
+      "stage1_recall": 0.5922865013774105,
+      "stage1_f1": 0.7089859851607585,
+      "stage1_tn": 1209,
+      "stage1_fp": 57,
+      "stage1_fn": 296,
+      "stage1_tp": 430,
+      "stage2_positive_rows_train": 140860,
+      "stage2_positive_rows_valid": 726,
+      "stage2_positive_rmse": 425.40495055411986,
+      "stage2_positive_mae": 162.30802463385027,
+      "stage2_fallback_only": false
+    },
+    {
+      "horizon": 48,
+      "pair_tag": "h48__clf_xgbc01__reg_xgbr01",
+      "fold_id": 1,
+      "classifier_name": "xgb_classifier",
+      "classifier_params": "{\"n_estimators\": 150, \"learning_rate\": 0.08, \"max_depth\": 5, \"subsample\": 0.8, \"colsample_bytree\": 0.7, \"min_child_weight\": 6, \"reg_alpha\": 0.0, \"reg_lambda\": 1.5, \"early_stopping_rounds\": 15}",
+      "regressor_name": "xgb_regressor",
+      "regressor_params": "{\"n_estimators\": 200, \"learning_rate\": 0.06, \"max_depth\": 5, \"subsample\": 0.8, \"colsample_bytree\": 0.7, \"min_child_weight\": 6, \"reg_alpha\": 0.0, \"reg_lambda\": 1.5, \"early_stopping_rounds\": 15}",
+      "two_stage_model_path": "results/run_20260418_214955/models/pair_h48__clf_xgbc01__reg_xgbr01_f01_two_stage.joblib",
+      "stage1_model_path": "results/run_20260418_214955/models/pair_h48__clf_xgbc01__reg_xgbr01_f01_stage1_classifier.joblib",
+      "stage2_model_path": "results/run_20260418_214955/models/pair_h48__clf_xgbc01__reg_xgbr01_f01_stage2_regressor.joblib",
+      "avg_county_rmse_expected": 64.69696934621763,
+      "avg_county_rmse_hard_gate": 63.90174539576783,
+      "overall_rmse_expected": 186.36074268806135,
+      "overall_mae_expected": 34.738801624663324,
+      "zero_baseline_rmse": 196.73068992261915,
+      "zero_baseline_avg_county_rmse": 66.71676804777749,
+      "stage1_roc_auc": 0.8743629743721508,
+      "stage1_average_precision": 0.8265821193051082,
+      "stage1_brier_score": 0.1300242283438306,
+      "stage1_log_loss": 0.4110624479526746,
+      "stage1_precision": 0.891218872870249,
+      "stage1_recall": 0.5078416728902165,
+      "stage1_f1": 0.6470028544243578,
+      "stage1_tn": 2562,
+      "stage1_fp": 83,
+      "stage1_fn": 659,
+      "stage1_tp": 680,
+      "stage2_positive_rows_train": 252291,
+      "stage2_positive_rows_valid": 1339,
+      "stage2_positive_rmse": 321.77445756185676,
+      "stage2_positive_mae": 101.97453344233273,
+      "stage2_fallback_only": false
+    }
+  ],
+  "final_refit_validation_summary_path": "tables/final_refit_validation_summary.csv",
+  "submission_model_summary_path": "tables/submission_model_summary.csv",
+  "artifacts": [
+    {
+      "relative_path": "checkpoints/h24_fold1_datasets.joblib",
+      "size_bytes": 66229210,
+      "modified_at": "2026-04-18T22:20:10"
+    },
+    {
+      "relative_path": "checkpoints/h48_fold1_datasets.joblib",
+      "size_bytes": 118908713,
+      "modified_at": "2026-04-18T23:13:04"
+    },
+    {
+      "relative_path": "checkpoints/pair_h24__clf_logen01__reg_enet01.joblib",
+      "size_bytes": 2697,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "checkpoints/pair_h24__clf_logen01__reg_xgbr01.joblib",
+      "size_bytes": 2842,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "checkpoints/pair_h24__clf_xgbc01__reg_enet01.joblib",
+      "size_bytes": 2813,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "checkpoints/pair_h24__clf_xgbc01__reg_xgbr01.joblib",
+      "size_bytes": 2768,
+      "modified_at": "2026-04-18T22:20:37"
+    },
+    {
+      "relative_path": "checkpoints/pair_h48__clf_logen01__reg_enet01.joblib",
+      "size_bytes": 2702,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "checkpoints/pair_h48__clf_logen01__reg_xgbr01.joblib",
+      "size_bytes": 2824,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "checkpoints/pair_h48__clf_xgbc01__reg_enet01.joblib",
+      "size_bytes": 2820,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "checkpoints/pair_h48__clf_xgbc01__reg_xgbr01.joblib",
+      "size_bytes": 2775,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "config.json",
+      "size_bytes": 2846,
+      "modified_at": "2026-04-18T21:49:55"
+    },
+    {
+      "relative_path": "environment.json",
+      "size_bytes": 445,
+      "modified_at": "2026-04-18T21:49:55"
+    },
+    {
+      "relative_path": "metrics/demo_eval_24h.json",
+      "size_bytes": 155,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "metrics/demo_eval_48h.json",
+      "size_bytes": 156,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "metrics/demo_eval_final_refit_24h.json",
+      "size_bytes": 154,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "metrics/demo_eval_final_refit_48h.json",
+      "size_bytes": 154,
+      "modified_at": "2026-04-18T23:15:28"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_logen01__reg_enet01_f01_stage1_history.json",
+      "size_bytes": 29,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_logen01__reg_enet01_f01_stage2_history.json",
+      "size_bytes": 20,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_logen01__reg_enet01_fold_metrics.csv",
+      "size_bytes": 1378,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_logen01__reg_xgbr01_f01_stage1_history.json",
+      "size_bytes": 29,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_logen01__reg_xgbr01_f01_stage2_history.json",
+      "size_bytes": 5852,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_logen01__reg_xgbr01_fold_metrics.csv",
+      "size_bytes": 1525,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_xgbc01__reg_enet01_f01_stage1_history.json",
+      "size_bytes": 6296,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_xgbc01__reg_enet01_f01_stage2_history.json",
+      "size_bytes": 20,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_xgbc01__reg_enet01_fold_metrics.csv",
+      "size_bytes": 1503,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_xgbc01__reg_xgbr01_f01_stage1_history.json",
+      "size_bytes": 6296,
+      "modified_at": "2026-04-18T22:20:37"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_xgbc01__reg_xgbr01_f01_stage2_history.json",
+      "size_bytes": 5852,
+      "modified_at": "2026-04-18T22:20:37"
+    },
+    {
+      "relative_path": "metrics/pair_h24__clf_xgbc01__reg_xgbr01_fold_metrics.csv",
+      "size_bytes": 1645,
+      "modified_at": "2026-04-18T22:20:37"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_logen01__reg_enet01_f01_stage1_history.json",
+      "size_bytes": 29,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_logen01__reg_enet01_f01_stage2_history.json",
+      "size_bytes": 20,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_logen01__reg_enet01_fold_metrics.csv",
+      "size_bytes": 1381,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_logen01__reg_xgbr01_f01_stage1_history.json",
+      "size_bytes": 29,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_logen01__reg_xgbr01_f01_stage2_history.json",
+      "size_bytes": 4168,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_logen01__reg_xgbr01_fold_metrics.csv",
+      "size_bytes": 1526,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_xgbc01__reg_enet01_f01_stage1_history.json",
+      "size_bytes": 4733,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_xgbc01__reg_enet01_f01_stage2_history.json",
+      "size_bytes": 20,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_xgbc01__reg_enet01_fold_metrics.csv",
+      "size_bytes": 1503,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_xgbc01__reg_xgbr01_f01_stage1_history.json",
+      "size_bytes": 4733,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_xgbc01__reg_xgbr01_f01_stage2_history.json",
+      "size_bytes": 4168,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "metrics/pair_h48__clf_xgbc01__reg_xgbr01_fold_metrics.csv",
+      "size_bytes": 1648,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "models/final_bundle_h24.joblib",
+      "size_bytes": 262741,
+      "modified_at": "2026-04-18T23:14:32"
+    },
+    {
+      "relative_path": "models/final_bundle_h24_metadata.json",
+      "size_bytes": 1914,
+      "modified_at": "2026-04-18T23:14:32"
+    },
+    {
+      "relative_path": "models/final_bundle_h48.joblib",
+      "size_bytes": 260602,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "models/final_bundle_h48_metadata.json",
+      "size_bytes": 1917,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "models/final_stage1_h24_classifier.joblib",
+      "size_bytes": 110085,
+      "modified_at": "2026-04-18T23:14:32"
+    },
+    {
+      "relative_path": "models/final_stage1_h48_classifier.joblib",
+      "size_bytes": 109021,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "models/final_stage2_h24_regressor.joblib",
+      "size_bytes": 153280,
+      "modified_at": "2026-04-18T23:14:32"
+    },
+    {
+      "relative_path": "models/final_stage2_h48_regressor.joblib",
+      "size_bytes": 152308,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_logen01__reg_enet01_f01_stage1_classifier.joblib",
+      "size_bytes": 8096,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_logen01__reg_enet01_f01_stage2_regressor.joblib",
+      "size_bytes": 7890,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_logen01__reg_enet01_f01_two_stage.joblib",
+      "size_bytes": 12609,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_logen01__reg_xgbr01_f01_stage1_classifier.joblib",
+      "size_bytes": 8098,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_logen01__reg_xgbr01_f01_stage2_regressor.joblib",
+      "size_bytes": 90546,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_logen01__reg_xgbr01_f01_two_stage.joblib",
+      "size_bytes": 96251,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_xgbc01__reg_enet01_f01_stage1_classifier.joblib",
+      "size_bytes": 50244,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_xgbc01__reg_enet01_f01_stage2_regressor.joblib",
+      "size_bytes": 7889,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_xgbc01__reg_enet01_f01_two_stage.joblib",
+      "size_bytes": 56065,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_xgbc01__reg_xgbr01_f01_stage1_classifier.joblib",
+      "size_bytes": 50243,
+      "modified_at": "2026-04-18T22:20:37"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_xgbc01__reg_xgbr01_f01_stage2_regressor.joblib",
+      "size_bytes": 90542,
+      "modified_at": "2026-04-18T22:20:37"
+    },
+    {
+      "relative_path": "models/pair_h24__clf_xgbc01__reg_xgbr01_f01_two_stage.joblib",
+      "size_bytes": 138904,
+      "modified_at": "2026-04-18T22:20:37"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_logen01__reg_enet01_f01_stage1_classifier.joblib",
+      "size_bytes": 8070,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_logen01__reg_enet01_f01_stage2_regressor.joblib",
+      "size_bytes": 7839,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_logen01__reg_enet01_f01_two_stage.joblib",
+      "size_bytes": 12597,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_logen01__reg_xgbr01_f01_stage1_classifier.joblib",
+      "size_bytes": 8073,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_logen01__reg_xgbr01_f01_stage2_regressor.joblib",
+      "size_bytes": 66385,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_logen01__reg_xgbr01_f01_two_stage.joblib",
+      "size_bytes": 72155,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_xgbc01__reg_enet01_f01_stage1_classifier.joblib",
+      "size_bytes": 40377,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_xgbc01__reg_enet01_f01_stage2_regressor.joblib",
+      "size_bytes": 7838,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_xgbc01__reg_enet01_f01_two_stage.joblib",
+      "size_bytes": 46084,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_xgbc01__reg_xgbr01_f01_stage1_classifier.joblib",
+      "size_bytes": 40375,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_xgbc01__reg_xgbr01_f01_stage2_regressor.joblib",
+      "size_bytes": 66383,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "models/pair_h48__clf_xgbc01__reg_xgbr01_f01_two_stage.joblib",
+      "size_bytes": 105062,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "models/submission_bundle_h24.joblib",
+      "size_bytes": 137966,
+      "modified_at": "2026-04-18T23:14:32"
+    },
+    {
+      "relative_path": "models/submission_bundle_h24_metadata.json",
+      "size_bytes": 836,
+      "modified_at": "2026-04-18T23:14:32"
+    },
+    {
+      "relative_path": "models/submission_bundle_h48.joblib",
+      "size_bytes": 104118,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "models/submission_bundle_h48_metadata.json",
+      "size_bytes": 836,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "models/submission_stage1_h24_classifier.joblib",
+      "size_bytes": 49302,
+      "modified_at": "2026-04-18T23:14:32"
+    },
+    {
+      "relative_path": "models/submission_stage1_h48_classifier.joblib",
+      "size_bytes": 39454,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "models/submission_stage2_h24_regressor.joblib",
+      "size_bytes": 89941,
+      "modified_at": "2026-04-18T23:14:32"
+    },
+    {
+      "relative_path": "models/submission_stage2_h48_regressor.joblib",
+      "size_bytes": 65875,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "plots/backtest_layout.png",
+      "size_bytes": 28823,
+      "modified_at": "2026-04-18T21:50:09"
+    },
+    {
+      "relative_path": "plots/best_pair_confusion_h24.png",
+      "size_bytes": 19691,
+      "modified_at": "2026-04-18T23:13:54"
+    },
+    {
+      "relative_path": "plots/best_pair_confusion_h48.png",
+      "size_bytes": 20311,
+      "modified_at": "2026-04-18T23:13:58"
+    },
+    {
+      "relative_path": "plots/best_pair_curves_h24.png",
+      "size_bytes": 62566,
+      "modified_at": "2026-04-18T23:13:54"
+    },
+    {
+      "relative_path": "plots/best_pair_curves_h48.png",
+      "size_bytes": 65413,
+      "modified_at": "2026-04-18T23:13:58"
+    },
+    {
+      "relative_path": "plots/best_pair_validation_trajectories_h24.png",
+      "size_bytes": 595804,
+      "modified_at": "2026-04-18T23:13:56"
+    },
+    {
+      "relative_path": "plots/best_pair_validation_trajectories_h48.png",
+      "size_bytes": 590465,
+      "modified_at": "2026-04-18T23:14:00"
+    },
+    {
+      "relative_path": "plots/eda_overview.png",
+      "size_bytes": 162601,
+      "modified_at": "2026-04-18T21:49:55"
+    },
+    {
+      "relative_path": "plots/final_stage1_feature_signal_h24.png",
+      "size_bytes": 86058,
+      "modified_at": "2026-04-18T23:15:28"
+    },
+    {
+      "relative_path": "plots/final_stage1_feature_signal_h48.png",
+      "size_bytes": 89884,
+      "modified_at": "2026-04-18T23:15:29"
+    },
+    {
+      "relative_path": "plots/final_stage2_feature_signal_h24.png",
+      "size_bytes": 89152,
+      "modified_at": "2026-04-18T23:15:28"
+    },
+    {
+      "relative_path": "plots/final_stage2_feature_signal_h48.png",
+      "size_bytes": 90855,
+      "modified_at": "2026-04-18T23:15:30"
+    },
+    {
+      "relative_path": "plots/pair_comparison_h24.png",
+      "size_bytes": 75002,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "plots/pair_comparison_h48.png",
+      "size_bytes": 57980,
+      "modified_at": "2026-04-18T23:13:54"
+    },
+    {
+      "relative_path": "plots/prediction_distributions_h24.png",
+      "size_bytes": 58733,
+      "modified_at": "2026-04-18T23:15:30"
+    },
+    {
+      "relative_path": "plots/prediction_distributions_h48.png",
+      "size_bytes": 60808,
+      "modified_at": "2026-04-18T23:15:31"
+    },
+    {
+      "relative_path": "plots/selected_weather_features.png",
+      "size_bytes": 40619,
+      "modified_at": "2026-04-18T21:50:04"
+    },
+    {
+      "relative_path": "predictions/final_refit_pred_24h.csv",
+      "size_bytes": 71940,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "predictions/final_refit_pred_48h.csv",
+      "size_bytes": 144014,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "predictions/pair_h24__clf_logen01__reg_enet01_f01_val_predictions.csv",
+      "size_bytes": 227450,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "predictions/pair_h24__clf_logen01__reg_xgbr01_f01_val_predictions.csv",
+      "size_bytes": 208833,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "predictions/pair_h24__clf_xgbc01__reg_enet01_f01_val_predictions.csv",
+      "size_bytes": 207642,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "predictions/pair_h24__clf_xgbc01__reg_xgbr01_f01_val_predictions.csv",
+      "size_bytes": 171670,
+      "modified_at": "2026-04-18T22:20:37"
+    },
+    {
+      "relative_path": "predictions/pair_h48__clf_logen01__reg_enet01_f01_val_predictions.csv",
+      "size_bytes": 455801,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "predictions/pair_h48__clf_logen01__reg_xgbr01_f01_val_predictions.csv",
+      "size_bytes": 419007,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "predictions/pair_h48__clf_xgbc01__reg_enet01_f01_val_predictions.csv",
+      "size_bytes": 411145,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "predictions/pair_h48__clf_xgbc01__reg_xgbr01_f01_val_predictions.csv",
+      "size_bytes": 339858,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "predictions/two_stage_pred_24h.csv",
+      "size_bytes": 71861,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "predictions/two_stage_pred_48h.csv",
+      "size_bytes": 143572,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "selected_weather_features.json",
+      "size_bytes": 160,
+      "modified_at": "2026-04-18T21:50:04"
+    },
+    {
+      "relative_path": "tables/backtest_folds.csv",
+      "size_bytes": 366,
+      "modified_at": "2026-04-18T21:50:08"
+    },
+    {
+      "relative_path": "tables/best_candidate_model_by_horizon.csv",
+      "size_bytes": 2730,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "tables/best_pair_by_horizon.csv",
+      "size_bytes": 2271,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "tables/candidate_fold_summary.csv",
+      "size_bytes": 8168,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "tables/classifier_stage_summary.csv",
+      "size_bytes": 1104,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "tables/eda_summary.csv",
+      "size_bytes": 170,
+      "modified_at": "2026-04-18T21:49:55"
+    },
+    {
+      "relative_path": "tables/feature_frame_summary.csv",
+      "size_bytes": 124,
+      "modified_at": "2026-04-18T21:50:08"
+    },
+    {
+      "relative_path": "tables/final_refit_validation_summary.csv",
+      "size_bytes": 2936,
+      "modified_at": "2026-04-18T23:15:27"
+    },
+    {
+      "relative_path": "tables/final_stage1_feature_signal_h24.csv",
+      "size_bytes": 749,
+      "modified_at": "2026-04-18T23:15:28"
+    },
+    {
+      "relative_path": "tables/final_stage1_feature_signal_h48.csv",
+      "size_bytes": 748,
+      "modified_at": "2026-04-18T23:15:29"
+    },
+    {
+      "relative_path": "tables/final_stage2_feature_signal_h24.csv",
+      "size_bytes": 773,
+      "modified_at": "2026-04-18T23:15:28"
+    },
+    {
+      "relative_path": "tables/final_stage2_feature_signal_h48.csv",
+      "size_bytes": 757,
+      "modified_at": "2026-04-18T23:15:29"
+    },
+    {
+      "relative_path": "tables/pair_h24__clf_logen01__reg_enet01_stage1_feature_signal.csv",
+      "size_bytes": 1272,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "tables/pair_h24__clf_logen01__reg_enet01_stage2_feature_signal.csv",
+      "size_bytes": 1440,
+      "modified_at": "2026-04-18T22:04:52"
+    },
+    {
+      "relative_path": "tables/pair_h24__clf_logen01__reg_xgbr01_stage1_feature_signal.csv",
+      "size_bytes": 1272,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "tables/pair_h24__clf_logen01__reg_xgbr01_stage2_feature_signal.csv",
+      "size_bytes": 1259,
+      "modified_at": "2026-04-18T22:10:52"
+    },
+    {
+      "relative_path": "tables/pair_h24__clf_xgbc01__reg_enet01_stage1_feature_signal.csv",
+      "size_bytes": 1258,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "tables/pair_h24__clf_xgbc01__reg_enet01_stage2_feature_signal.csv",
+      "size_bytes": 1440,
+      "modified_at": "2026-04-18T22:20:02"
+    },
+    {
+      "relative_path": "tables/pair_h24__clf_xgbc01__reg_xgbr01_stage1_feature_signal.csv",
+      "size_bytes": 1258,
+      "modified_at": "2026-04-18T23:13:54"
+    },
+    {
+      "relative_path": "tables/pair_h24__clf_xgbc01__reg_xgbr01_stage2_feature_signal.csv",
+      "size_bytes": 1259,
+      "modified_at": "2026-04-18T23:13:54"
+    },
+    {
+      "relative_path": "tables/pair_h48__clf_logen01__reg_enet01_stage1_feature_signal.csv",
+      "size_bytes": 1269,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "tables/pair_h48__clf_logen01__reg_enet01_stage2_feature_signal.csv",
+      "size_bytes": 1444,
+      "modified_at": "2026-04-18T22:46:11"
+    },
+    {
+      "relative_path": "tables/pair_h48__clf_logen01__reg_xgbr01_stage1_feature_signal.csv",
+      "size_bytes": 1269,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "tables/pair_h48__clf_logen01__reg_xgbr01_stage2_feature_signal.csv",
+      "size_bytes": 1261,
+      "modified_at": "2026-04-18T22:57:12"
+    },
+    {
+      "relative_path": "tables/pair_h48__clf_xgbc01__reg_enet01_stage1_feature_signal.csv",
+      "size_bytes": 1258,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "tables/pair_h48__clf_xgbc01__reg_enet01_stage2_feature_signal.csv",
+      "size_bytes": 1444,
+      "modified_at": "2026-04-18T23:12:51"
+    },
+    {
+      "relative_path": "tables/pair_h48__clf_xgbc01__reg_xgbr01_stage1_feature_signal.csv",
+      "size_bytes": 1258,
+      "modified_at": "2026-04-18T23:13:58"
+    },
+    {
+      "relative_path": "tables/pair_h48__clf_xgbc01__reg_xgbr01_stage2_feature_signal.csv",
+      "size_bytes": 1261,
+      "modified_at": "2026-04-18T23:13:58"
+    },
+    {
+      "relative_path": "tables/pair_summary.csv",
+      "size_bytes": 6107,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "tables/regressor_stage_summary.csv",
+      "size_bytes": 942,
+      "modified_at": "2026-04-18T23:13:53"
+    },
+    {
+      "relative_path": "tables/selected_weather_features.csv",
+      "size_bytes": 503,
+      "modified_at": "2026-04-18T21:50:04"
+    },
+    {
+      "relative_path": "tables/submission_model_summary.csv",
+      "size_bytes": 3628,
+      "modified_at": "2026-04-18T23:15:27"
+    }
+  ]
+}
