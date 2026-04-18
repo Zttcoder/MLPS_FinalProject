@@ -11,7 +11,7 @@ It is written so that someone opening the repository for the first time can unde
 
 Throughout this guide, the example run is:
 
-- [run_20260418_214955](</c:/Users/Arturo Arias/OneDrive/Documentos en OneDrive/CMU/2026-1 Spring/Machine Learning for Problem Solving/Project/run_20260418_214955>)
+- [run_20260418_214955](run_20260418_214955)
 
 In that example:
 
