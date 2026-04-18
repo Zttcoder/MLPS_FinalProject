@@ -11,7 +11,7 @@ It is written so that someone opening the repository for the first time can unde
 
 Throughout this guide, the example run is:
 
-- [run_20260418_214955](run_20260418_214955)
+- [aligned_run](aligned_run) (which was previously named `run_20260418_214955`)
 
 In that example:
 
@@ -862,6 +862,6 @@ Together, those three files already tell you:
 
 If you are browsing this repository and want a concrete example, start with:
 
-- [run_20260418_214955](run_20260418_214955)
+- [aligned_run](aligned_run)
 
 and then follow the reading order from Section 3.
