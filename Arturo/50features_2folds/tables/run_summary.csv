@@ -1,0 +1,2 @@
+run_dir,n_artifacts,best_24h_pair,best_48h_pair,submission_24h_path,submission_48h_path
+/content/drive/MyDrive/MLPS Project/results/run_20260417_221819,124,h24__clf_logen01__reg_xgbr01,h48__clf_xgbc01__reg_xgbr01,results/run_20260417_221819/predictions/two_stage_pred_24h.csv,results/run_20260417_221819/predictions/two_stage_pred_48h.csv
