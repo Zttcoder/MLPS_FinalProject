@@ -1,0 +1,50 @@
+{
+  "selected_weather_features": [
+    "vstm",
+    "unknown_2",
+    "veg",
+    "vvcsh",
+    "unknown",
+    "v",
+    "ustm",
+    "mdens",
+    "vucsh",
+    "lai"
+  ],
+  "excluded_all_zero_features": [
+    "aod",
+    "bgrun",
+    "cfnsf",
+    "cfrzr",
+    "cicep",
+    "cin",
+    "crain",
+    "csnow",
+    "frzr",
+    "hail",
+    "hail_1",
+    "hail_2",
+    "ltng",
+    "prate",
+    "refd_1",
+    "sde",
+    "sdwe",
+    "sdwe_1",
+    "siconc",
+    "snowc",
+    "ssrun",
+    "tcoli",
+    "tcolw",
+    "tp",
+    "unknown_1",
+    "unknown_7",
+    "unknown_9",
+    "veril"
+  ],
+  "excluded_nan_correlation_features": [
+    "cpofp",
+    "refc",
+    "refd",
+    "unknown_3"
+  ]
+}
