@@ -1,0 +1,7 @@
+{
+  "overall_rmse": 21.668742930024557,
+  "overall_mae": 6.116328814795145,
+  "avg_county_rmse": 6.465323267636427,
+  "n_rows": 3984,
+  "n_locations": 83
+}
