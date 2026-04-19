@@ -1,0 +1,5 @@
+horizon,classifier_name,classifier_params,mean_stage1_roc_auc,mean_stage1_average_precision,mean_stage1_brier_score,mean_stage1_f1
+24,xgb_classifier,"{""n_estimators"": 150, ""learning_rate"": 0.08, ""max_depth"": 5, ""subsample"": 0.8, ""colsample_bytree"": 0.7, ""min_child_weight"": 6, ""reg_alpha"": 0.0, ""reg_lambda"": 1.5, ""early_stopping_rounds"": 15}",0.8655988435161416,0.7968550830338743,0.1342306546416683,0.6453287197231834
+24,logistic_enet,"{""C"": 0.5, ""l1_ratio"": 0.15, ""class_weight"": ""balanced"", ""max_iter"": 250}",0.8547373340618631,0.7931431626049962,0.14602393635552097,0.6661742983751846
+48,xgb_classifier,"{""n_estimators"": 150, ""learning_rate"": 0.08, ""max_depth"": 5, ""subsample"": 0.8, ""colsample_bytree"": 0.7, ""min_child_weight"": 6, ""reg_alpha"": 0.0, ""reg_lambda"": 1.5, ""early_stopping_rounds"": 15}",0.861439356254572,0.8021315848300952,0.1337686686582881,0.7062626262626263
+48,logistic_enet,"{""C"": 0.5, ""l1_ratio"": 0.15, ""class_weight"": ""balanced"", ""max_iter"": 250}",0.8563762984637893,0.7875273502033524,0.1455421268757258,0.6709193245778612
