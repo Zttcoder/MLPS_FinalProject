@@ -1,0 +1,3 @@
+horizon,fold_id,val_origin_idx,val_origin_timestamp,train_origin_start_idx,train_origin_start_timestamp,train_origin_max_idx,train_origin_max_timestamp,validation_window_start,validation_window_end
+24,1,1728,2023-06-12,1464,2023-06-01,1704,2023-06-11,2023-06-12 01:00:00,2023-06-13
+48,1,1728,2023-06-12,1464,2023-06-01,1680,2023-06-10,2023-06-12 01:00:00,2023-06-14
