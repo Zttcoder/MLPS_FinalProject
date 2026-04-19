@@ -1,0 +1,5 @@
+horizon,regressor_name,regressor_params,mean_stage2_positive_rmse,mean_stage2_positive_mae,mean_stage2_positive_rows_train
+24,xgb_regressor,"{""n_estimators"": 200, ""learning_rate"": 0.06, ""max_depth"": 5, ""subsample"": 0.8, ""colsample_bytree"": 0.7, ""min_child_weight"": 6, ""reg_alpha"": 0.0, ""reg_lambda"": 1.5, ""early_stopping_rounds"": 15}",461.6680118778441,174.3334925984683,140227.0
+24,elasticnet_regression,"{""alpha"": 0.0005, ""l1_ratio"": 0.1, ""max_iter"": 4000}",467.73183596332626,179.17328006645684,140227.0
+48,xgb_regressor,"{""n_estimators"": 200, ""learning_rate"": 0.06, ""max_depth"": 5, ""subsample"": 0.8, ""colsample_bytree"": 0.7, ""min_child_weight"": 6, ""reg_alpha"": 0.0, ""reg_lambda"": 1.5, ""early_stopping_rounds"": 15}",345.0510094344716,107.98748734995046,251115.0
+48,elasticnet_regression,"{""alpha"": 0.0005, ""l1_ratio"": 0.1, ""max_iter"": 4000}",351.1798873829633,112.48816762340361,251115.0
