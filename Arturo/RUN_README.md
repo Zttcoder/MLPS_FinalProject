@@ -52,8 +52,10 @@ The table below maps the main notebook variants to the published folders used in
 | Public folder | Internal run timestamp | Notebook suffix | Notebook file | Short description |
 | --- | --- | --- | --- | --- |
 | `aligned_run` | `run_20260418_214955` | `aligned_run` | [`two_stage_aaarias_aligned_run.ipynb`](https://github.com/Zttcoder/MLPS_FinalProject/blob/Developing/Arturo/two_stage_aaarias_aligned_run.ipynb) | Uses the richer direct tabular feature engineering, but aligns the training and validation windows with the agreed manual split. This is the main “aligned windows, richer features” experiment. |
+| `exact_sets_aligned_run` | `run_20260419_203159` | `exact_sets_aligned_run` | [`two_stage_aaarias_exact_sets_aligned_run.ipynb`](https://github.com/Zttcoder/MLPS_FinalProject/blob/Developing/Arturo/two_stage_aaarias_exact_sets_aligned_run.ipynb) | Same modeling family as `aligned_run`, but the training and validation windows were adjusted to match the demo split exactly, while also correcting the earlier hour-shift issue in the validation ranges. |
 | `10features_1fold` | `run_20260418_235043` | `10features_1fold` | [`two_stage_aaarias_10features_1fold.ipynb`](https://github.com/Zttcoder/MLPS_FinalProject/blob/Developing/Arturo/two_stage_aaarias_10features_1fold.ipynb) | Uses direct tabular feature engineering, keeps the top 10 weather features after correlation screening, and uses 1 validation fold. The validation fold is the last eligible part of the available history. |
 | `same_features_run` | `run_20260419_061735` | `same_features_run` | [`two_stage_aaarias_same_features_run.ipynb`](https://github.com/Zttcoder/MLPS_FinalProject/blob/Developing/Arturo/two_stage_aaarias_same_features_run.ipynb) | Aligns both the train/validation windows and the feature-engineering approach. This is the closest two-stage variant to the LSTM-style setup because the features themselves are also aligned. |
+| `exact_sets_same_features_run` | `run_20260419_203951` | `exact_sets_same_features_run` | [`two_stage_aaarias_exact_sets_same_features_run.ipynb`](https://github.com/Zttcoder/MLPS_FinalProject/blob/Developing/Arturo/notebooks_to_upload/two_stage_aaarias_exact_sets_same_features_run.ipynb) | Same idea as `same_features_run`, but with training and validation windows adjusted to match the demo split exactly, again with the corrected validation-hour alignment. |
 | `all_data_run` | `run_20260418_235033` | `all_data_run` | [`two_stage_aaarias_all_data_run.ipynb`](https://github.com/Zttcoder/MLPS_FinalProject/blob/Developing/Arturo/two_stage_aaarias_all_data_run.ipynb) | Uses direct tabular feature engineering and takes the last 24 hours or 48 hours, depending on the horizon, as validation. Everything earlier is used for training. |
 | `50features_2fold` | `run_20260418_235229` | `50features_2fold` | [`two_stage_aaarias_50features_2fold.ipynb`](https://github.com/Zttcoder/MLPS_FinalProject/blob/Developing/Arturo/two_stage_aaarias_50features_2fold.ipynb) | Uses the same direct tabular feature engineering as the other richer two-stage variants, but expands the weather shortlist to 50 features and uses 2 future-only folds in a backtesting-like setup. |
 
@@ -70,9 +72,17 @@ Practical interpretation of the notebook suffixes:
 - `aligned_run`
   - richer direct tabular feature engineering
   - manually aligned train/validation starts and ends
+- `exact_sets_aligned_run`
+  - richer direct tabular feature engineering
+  - same modeling setup as `aligned_run`
+  - training and validation sets adjusted to match the demo split exactly, with the corrected hour alignment
 - `same_features_run`
   - aligned train/validation windows
   - aligned compact feature construction, closer to the LSTM/baseline starting point
+- `exact_sets_same_features_run`
+  - aligned compact feature construction, closer to the LSTM/baseline starting point
+  - same modeling idea as `same_features_run`
+  - training and validation sets adjusted to match the demo split exactly, with the corrected hour alignment
 - `all_data_run`
   - richer direct tabular feature engineering
   - last 24h or 48h used as validation, with all earlier history used for training
