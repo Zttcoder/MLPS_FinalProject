@@ -11,14 +11,65 @@ It is written so that someone opening the repository for the first time can unde
 
 Throughout this guide, the example run is:
 
-- [aligned_run](aligned_run) (which was previously named `run_20260418_214955`)
+- [run_20260418_214955](</c:/Users/Arturo Arias/OneDrive/Documentos en OneDrive/CMU/2026-1 Spring/Machine Learning for Problem Solving/Project/run_20260418_214955>)
 
 In that example:
 
 - the run timestamp is `20260418_214955`
+- the notebook variant is `two_stage_aaarias_aligned_run.ipynb`
 - the run came from a notebook using a two-stage direct tabular model
 - the run evaluated horizons `24` and `48`
 - the selected best pair for both horizons was `xgb_classifier + xgb_regressor`
+
+## Run aliases used in this repository
+
+The repository contains several closely related two-stage notebooks and matching `run_TIMESTAMP` folders.
+
+To make them easier to compare, it helps to think of them as belonging to two feature-engineering families:
+
+- **Direct tabular feature engineering**
+  - this is the richer feature-engineering strategy introduced in the two-stage notebooks
+  - it converts each county-hour forecast origin into an explicit tabular row
+  - features can include outage lags, rolling outage summaries, non-zero-rate summaries, tracked lags and summaries, current/lagged/rolling weather variables, county identity, and calendar features
+  - this is different from the compact feature construction used in `baseline_yuwenz.ipynb` and `LSTM_model_qiushiw.ipynb`
+- **Aligned feature engineering**
+  - this is the compact feature recipe used by the `same_features_run` notebook
+  - it is designed to stay much closer to the LSTM-style starting point
+  - features are limited to current outage, outage lag 1, outage lag 24, cyclical hour/day features, and a selected weather shortlist
+
+The table below maps the main notebook variants to the run folders discussed in the project.
+
+| Run folder | Notebook suffix | Notebook file | Short description |
+| --- | --- | --- | --- |
+| `run_20260418_214955` | `aligned_run` | `two_stage_aaarias_aligned_run.ipynb` | Uses the richer direct tabular feature engineering, but aligns the training and validation windows with the agreed manual split. This is the main “aligned windows, richer features” run. |
+| `run_20260418_235043` | `10features_1fold` | `two_stage_aaarias_10features_1fold.ipynb` | Uses direct tabular feature engineering, keeps the top 10 weather features after correlation screening, and uses 1 validation fold. The validation fold is the last eligible part of the available history. |
+| `run_20260419_061735` | `same_features_run` | `two_stage_aaarias_same_features_run.ipynb` | Aligns both the train/validation windows and the feature-engineering approach. This is the closest two-stage variant to the LSTM-style setup because the features themselves are also aligned. |
+| `run_20260418_235033` | `all_data_run` | `two_stage_aaarias_all_data_run.ipynb` | Uses direct tabular feature engineering and takes the last 24 hours or 48 hours, depending on the horizon, as validation. Everything earlier is used for training. |
+| `run_20260418_235229` | `50features_2fold` | `two_stage_aaarias_50features_2fold.ipynb` | Uses the same direct tabular feature engineering as the other richer two-stage variants, but expands the weather shortlist to 50 features and uses 2 future-only folds in a backtesting-like setup. |
+
+Practical interpretation of the notebook suffixes:
+
+- `10features_1fold`
+  - top-10 weather-feature selection by correlation
+  - one future validation fold
+  - richer direct tabular feature engineering
+- `50features_2fold`
+  - top-50 weather-feature selection by correlation
+  - two future-only validation folds
+  - richer direct tabular feature engineering
+- `aligned_run`
+  - richer direct tabular feature engineering
+  - manually aligned train/validation starts and ends
+- `same_features_run`
+  - aligned train/validation windows
+  - aligned compact feature construction, closer to the LSTM/baseline starting point
+- `all_data_run`
+  - richer direct tabular feature engineering
+  - last 24h or 48h used as validation, with all earlier history used for training
+
+For the most detailed reference of what each variant is trying to do, see the notebook files under:
+
+- [notebooks_to_upload](</c:/Users/Arturo Arias/OneDrive/Documentos en OneDrive/CMU/2026-1 Spring/Machine Learning for Problem Solving/Project/notebooks_to_upload>)
 
 ## 1. Big picture: what a run folder is
 
@@ -862,6 +913,6 @@ Together, those three files already tell you:
 
 If you are browsing this repository and want a concrete example, start with:
 
-- [aligned_run](aligned_run)
+- [run_20260418_214955](</c:/Users/Arturo Arias/OneDrive/Documentos en OneDrive/CMU/2026-1 Spring/Machine Learning for Problem Solving/Project/run_20260418_214955>)
 
 and then follow the reading order from Section 3.
