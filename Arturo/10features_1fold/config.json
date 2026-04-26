@@ -1,0 +1,104 @@
+{
+  "running_in_colab": true,
+  "seed": 2026,
+  "model_family": "direct_hurdle_tabular",
+  "horizons": [
+    24,
+    48
+  ],
+  "allow_gpu": true,
+  "n_jobs": 4,
+  "origin_stride_hours": 3,
+  "min_train_hours": 504,
+  "max_train_hours": 672,
+  "n_backtest_folds": 1,
+  "fold_spacing_hours": 336,
+  "lag_hours": [
+    24,
+    48
+  ],
+  "rolling_windows": [
+    6
+  ],
+  "weather_lags": [
+    24,
+    48
+  ],
+  "weather_roll_windows": [
+    6
+  ],
+  "n_weather_features": 10,
+  "classifier_threshold": 0.5,
+  "combination_rule": "probability_times_positive_expectation",
+  "positive_target_transform": "log1p",
+  "handle_weather_outliers": true,
+  "weather_outlier_strategy": "winsorize_iqr",
+  "weather_outlier_iqr_multiplier": 1.5,
+  "assert_no_weather_nans_after_cleaning": true,
+  "resume_from_checkpoints": false,
+  "resume_specific_run": false,
+  "resume_run_timestamp": "",
+  "resume_latest_run": false,
+  "save_fold_models": true,
+  "save_all_trained_models": true,
+  "backfill_missing_model_artifacts_from_existing_runs": false,
+  "reuse_existing_saved_models": false,
+  "reuse_existing_final_refit_artifacts": false,
+  "reuse_existing_submission_model_artifacts": false,
+  "save_submission_model_copies": true,
+  "prediction_model_source": "best_candidate_validation_model",
+  "use_demo_evaluation": true,
+  "plot_top_k_counties": 10,
+  "show_detailed_progress": true,
+  "classifier_param_grid": {
+    "logistic_enet": [
+      {
+        "C": 0.5,
+        "l1_ratio": 0.15,
+        "class_weight": "balanced",
+        "max_iter": 250
+      }
+    ],
+    "xgb_classifier": [
+      {
+        "n_estimators": 150,
+        "learning_rate": 0.08,
+        "max_depth": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.7,
+        "min_child_weight": 6,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.5,
+        "early_stopping_rounds": 15
+      }
+    ]
+  },
+  "regressor_param_grid": {
+    "elasticnet_regression": [
+      {
+        "alpha": 0.0005,
+        "l1_ratio": 0.1,
+        "max_iter": 4000
+      }
+    ],
+    "xgb_regressor": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.06,
+        "max_depth": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.7,
+        "min_child_weight": 6,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.5,
+        "early_stopping_rounds": 15
+      }
+    ]
+  },
+  "gpu_available": true,
+  "xgb_device": "cuda",
+  "xgb_tree_method": "hist",
+  "run_timestamp": "20260418_235043",
+  "run_dir": "/content/drive/MyDrive/MLPS Project/results/run_20260418_235043",
+  "resumed_existing_run": false
+}

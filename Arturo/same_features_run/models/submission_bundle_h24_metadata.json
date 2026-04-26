@@ -1,0 +1,27 @@
+{
+  "horizon": 24,
+  "selection_source": "best_candidate_validation_model",
+  "source_pair_tag": "h24__clf_logen01__reg_xgbr01",
+  "source_fold_id": 1,
+  "classifier_name": "logistic_enet",
+  "classifier_params": {
+    "C": 0.5,
+    "l1_ratio": 0.15,
+    "class_weight": "balanced",
+    "max_iter": 250
+  },
+  "regressor_name": "xgb_regressor",
+  "regressor_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.06,
+    "max_depth": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 6,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.5,
+    "early_stopping_rounds": 15
+  },
+  "avg_county_rmse_expected": 82.0885929458111,
+  "overall_rmse_expected": 258.3322842300943
+}

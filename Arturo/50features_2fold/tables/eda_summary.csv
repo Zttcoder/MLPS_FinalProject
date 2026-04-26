@@ -1,0 +1,7 @@
+metric,value
+mean_outage,45.24833438334551
+median_outage,0.0
+std_outage,452.2684401332788
+max_outage,23346.0
+zero_rate,0.7047328601774056
+nonzero_rate,0.2952671398225944

@@ -1,0 +1,52 @@
+{
+  "horizon": 24,
+  "selection_source": "best_pair_by_horizon",
+  "source_pair_tag": "h24__clf_logen01__reg_xgbr01",
+  "classifier_name": "logistic_enet",
+  "classifier_params": {
+    "C": 0.5,
+    "l1_ratio": 0.15,
+    "class_weight": "balanced",
+    "max_iter": 250
+  },
+  "regressor_name": "xgb_regressor",
+  "regressor_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.06,
+    "max_depth": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 6,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.5,
+    "early_stopping_rounds": 15
+  },
+  "bundle_source": "trained_refit",
+  "final_train_origin_max_timestamp": "2023-06-11T00:00:00",
+  "source_validation_metrics": {
+    "mean_horizon": 24.0,
+    "mean_fold_id": 1.0,
+    "mean_avg_county_rmse_expected": 82.0885929458111,
+    "mean_avg_county_rmse_hard_gate": 80.64416498397189,
+    "mean_overall_rmse_expected": 258.3322842300943,
+    "mean_overall_mae_expected": 59.80156598051314,
+    "mean_zero_baseline_rmse": 273.35358370964815,
+    "mean_zero_baseline_avg_county_rmse": 86.70970007699015,
+    "mean_stage1_roc_auc": 0.6918974318801978,
+    "mean_stage1_average_precision": 0.5777279342336958,
+    "mean_stage1_brier_score": 0.23362283405262707,
+    "mean_stage1_log_loss": 0.6673898887698486,
+    "mean_stage1_precision": 0.4768392370572207,
+    "mean_stage1_recall": 0.7231404958677686,
+    "mean_stage1_f1": 0.5747126436781609,
+    "mean_stage1_tn": 690.0,
+    "mean_stage1_fp": 576.0,
+    "mean_stage1_fn": 201.0,
+    "mean_stage1_tp": 525.0,
+    "mean_stage2_positive_rows_train": 140860.0,
+    "mean_stage2_positive_rows_valid": 726.0,
+    "mean_stage2_positive_rmse": 418.28195957630965,
+    "mean_stage2_positive_mae": 153.84376100157246,
+    "mean_stage2_fallback_only": 0.0
+  }
+}

@@ -1,0 +1,6 @@
+metric,value
+rows_in_model_df,179363
+base_numeric_features,274
+categorical_features,1
+feature_warmup_hours,48
+max_horizon,48
